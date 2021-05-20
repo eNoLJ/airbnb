@@ -8,10 +8,13 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    @IBOutlet weak var nearTripCollectionView: UICollectionView!
+    let collectionViewDataSource: UICollectionViewDataSource = NearTripCollectionViewDataSource()
+    let collectionViewDelegate = NearTripCollectionViewDelegate()
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        nearTripCollectionView.dataSource = collectionViewDataSource
+        nearTripCollectionView.delegate = collectionViewDelegate
     }
 
 

@@ -15,6 +15,9 @@
 		1E12E85A2653A30F00263A66 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E12E8582653A30F00263A66 /* LaunchScreen.storyboard */; };
 		1E12E8652653A30F00263A66 /* AirbnbAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E12E8642653A30F00263A66 /* AirbnbAppTests.swift */; };
 		1E12E8702653A30F00263A66 /* AirbnbAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E12E86F2653A30F00263A66 /* AirbnbAppUITests.swift */; };
+		1E12E87E265537D300263A66 /* NearTripCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E12E87D265537D300263A66 /* NearTripCollectionView.swift */; };
+		1E12E880265537E900263A66 /* NearTripCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E12E87F265537E900263A66 /* NearTripCollectionViewCell.swift */; };
+		1E12E88226553E8000263A66 /* NearTripCollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E12E88126553E8000263A66 /* NearTripCollectionViewDataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		1E12E86B2653A30F00263A66 /* AirbnbAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AirbnbAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E12E86F2653A30F00263A66 /* AirbnbAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirbnbAppUITests.swift; sourceTree = "<group>"; };
 		1E12E8712653A30F00263A66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1E12E87D265537D300263A66 /* NearTripCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearTripCollectionView.swift; sourceTree = "<group>"; };
+		1E12E87F265537E900263A66 /* NearTripCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearTripCollectionViewCell.swift; sourceTree = "<group>"; };
+		1E12E88126553E8000263A66 /* NearTripCollectionViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearTripCollectionViewDataSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +112,9 @@
 				1E12E8562653A30F00263A66 /* Assets.xcassets */,
 				1E12E8582653A30F00263A66 /* LaunchScreen.storyboard */,
 				1E12E85B2653A30F00263A66 /* Info.plist */,
+				1E12E87D265537D300263A66 /* NearTripCollectionView.swift */,
+				1E12E87F265537E900263A66 /* NearTripCollectionViewCell.swift */,
+				1E12E88126553E8000263A66 /* NearTripCollectionViewDataSource.swift */,
 			);
 			path = AirbnbApp;
 			sourceTree = "<group>";
@@ -259,8 +268,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				1E12E8522653A30D00263A66 /* ViewController.swift in Sources */,
+				1E12E880265537E900263A66 /* NearTripCollectionViewCell.swift in Sources */,
 				1E12E84E2653A30D00263A66 /* AppDelegate.swift in Sources */,
 				1E12E8502653A30D00263A66 /* SceneDelegate.swift in Sources */,
+				1E12E88226553E8000263A66 /* NearTripCollectionViewDataSource.swift in Sources */,
+				1E12E87E265537D300263A66 /* NearTripCollectionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
