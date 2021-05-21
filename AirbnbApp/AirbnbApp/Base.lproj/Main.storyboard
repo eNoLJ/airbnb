@@ -24,10 +24,10 @@
                                         <rect key="frame" x="0.0" y="0.0" width="428" height="1400"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bRn-0h-cfU">
-                                                <rect key="frame" x="0.0" y="396" width="428" height="92"/>
+                                                <rect key="frame" x="0.0" y="132" width="428" height="356"/>
                                                 <subviews>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bannerImage" translatesAutoresizingMaskIntoConstraints="NO" id="LK2-Nl-Gfx">
-                                                        <rect key="frame" x="0.0" y="-132" width="428" height="224"/>
+                                                        <rect key="frame" x="0.0" y="-132" width="428" height="488"/>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="슬기로운 자연생활" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mur-DK-BqU" userLabel="슬기로운 자연생활">
                                                         <rect key="frame" x="18.000000000000007" y="0.0" width="100.66666666666669" height="69.333333333333329"/>
@@ -36,7 +36,7 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="에어비앤비가 엄선한 위시리스트를 만나보세요." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XEQ-Ny-HG6" userLabel="에어비앤비가 엄선한 위시리스트를 만나보세요.">
-                                                        <rect key="frame" x="18" y="85.333333333333314" width="171" height="40.666666666666657"/>
+                                                        <rect key="frame" x="18" y="85.333333333333343" width="171" height="40.666666666666657"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -68,8 +68,8 @@
                                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q0d-Qa-zok">
                                                 <rect key="frame" x="0.0" y="488" width="428" height="275"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  가까운 여행지 둘러보기" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xwe-Rn-Bey">
-                                                        <rect key="frame" x="0.0" y="40" width="428" height="28"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="가까운 여행지 둘러보기" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xwe-Rn-Bey">
+                                                        <rect key="frame" x="16" y="40" width="412" height="28"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="28" id="bE6-1N-pBc"/>
@@ -143,7 +143,7 @@
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
-                                                    <constraint firstItem="xwe-Rn-Bey" firstAttribute="leading" secondItem="Q0d-Qa-zok" secondAttribute="leading" id="GC9-y6-fNx"/>
+                                                    <constraint firstItem="xwe-Rn-Bey" firstAttribute="leading" secondItem="Q0d-Qa-zok" secondAttribute="leading" constant="16" id="GC9-y6-fNx"/>
                                                     <constraint firstItem="XJP-ej-Mj6" firstAttribute="top" secondItem="xwe-Rn-Bey" secondAttribute="bottom" constant="24" id="UiK-9p-Syd"/>
                                                     <constraint firstAttribute="height" constant="275" id="VFA-xV-Ct3"/>
                                                     <constraint firstItem="xwe-Rn-Bey" firstAttribute="top" secondItem="Q0d-Qa-zok" secondAttribute="top" constant="40" id="Xsg-JF-bKU"/>
@@ -153,10 +153,10 @@
                                                 </constraints>
                                             </view>
                                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GYm-cp-Vnk">
-                                                <rect key="frame" x="0.0" y="763" width="428" height="275"/>
+                                                <rect key="frame" x="0.0" y="763" width="428" height="460"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  가까운 여행지 둘러보기" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hkl-24-26u">
-                                                        <rect key="frame" x="0.0" y="40" width="428" height="28"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="어디에서나, 여행은 살아보는거야!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hkl-24-26u">
+                                                        <rect key="frame" x="16" y="40" width="412" height="28"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="28" id="7sR-GP-EqC"/>
@@ -165,64 +165,60 @@
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="6XX-OT-JUK">
-                                                        <rect key="frame" x="0.0" y="92" width="428" height="172"/>
+                                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="6XX-OT-JUK" customClass="AnywhereTripCollectionView" customModule="AirbnbApp" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="92" width="428" height="368"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="height" constant="172" id="aep-SX-vEy"/>
+                                                            <constraint firstAttribute="height" constant="368" id="aep-SX-vEy"/>
                                                         </constraints>
-                                                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="16" minimumInteritemSpacing="24" id="4nx-4x-2T0">
-                                                            <size key="itemSize" width="253" height="74"/>
-                                                            <size key="estimatedItemSize" width="253" height="74"/>
+                                                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="16" minimumInteritemSpacing="0.0" id="4nx-4x-2T0">
+                                                            <size key="itemSize" width="253" height="368"/>
                                                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                                             <inset key="sectionInset" minX="16" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                         </collectionViewFlowLayout>
                                                         <cells>
-                                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="NearTripCollectionViewCell" id="mWD-lv-EvE" customClass="NearTripCollectionViewCell" customModule="AirbnbApp" customModuleProvider="target">
-                                                                <rect key="frame" x="16" y="0.0" width="253" height="74"/>
+                                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="AnywhereTripCollectionViewCell" id="qQY-N5-xIu" customClass="AnywhereTripCollectionViewCell" customModule="AirbnbApp" customModuleProvider="target">
+                                                                <rect key="frame" x="16" y="0.0" width="253" height="368"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="4JJ-59-M7d">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="253" height="74"/>
-                                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="hfI-3l-SgY">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="253" height="368"/>
+                                                                    <autoresizingMask key="autoresizingMask"/>
                                                                     <subviews>
-                                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ABI-Cr-AjC">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="74" height="74"/>
-                                                                            <color key="backgroundColor" red="0.2894863486" green="0.64139598610000004" blue="0.18024426700000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vjr-BC-9ks">
+                                                                            <rect key="frame" x="0.0" y="0.0" width="253" height="368"/>
+                                                                            <subviews>
+                                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0Id-IC-45x">
+                                                                                    <rect key="frame" x="0.0" y="0.0" width="253" height="308"/>
+                                                                                    <color key="backgroundColor" red="0.2894863486" green="0.64139598610000004" blue="0.18024426700000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                                    <constraints>
+                                                                                        <constraint firstAttribute="height" constant="308" id="uFK-vj-FLb"/>
+                                                                                    </constraints>
+                                                                                </imageView>
+                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="자연생활을 만끽 할 수 있는 숙소" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0wI-5I-5T2">
+                                                                                    <rect key="frame" x="0.0" y="324" width="253" height="21"/>
+                                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                                    <nil key="textColor"/>
+                                                                                    <nil key="highlightedColor"/>
+                                                                                </label>
+                                                                            </subviews>
+                                                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                                             <constraints>
-                                                                                <constraint firstAttribute="height" constant="74" id="Ixa-lh-hJw"/>
-                                                                                <constraint firstAttribute="width" constant="74" id="x4N-gJ-f9M"/>
+                                                                                <constraint firstItem="0Id-IC-45x" firstAttribute="leading" secondItem="Vjr-BC-9ks" secondAttribute="leading" id="BxS-FG-rjA"/>
+                                                                                <constraint firstAttribute="trailing" secondItem="0wI-5I-5T2" secondAttribute="trailing" id="Iqk-Sc-8am"/>
+                                                                                <constraint firstItem="0Id-IC-45x" firstAttribute="top" secondItem="Vjr-BC-9ks" secondAttribute="top" id="PQ4-ia-9FQ"/>
+                                                                                <constraint firstItem="0wI-5I-5T2" firstAttribute="leading" secondItem="Vjr-BC-9ks" secondAttribute="leading" id="aM6-S3-Xd6"/>
+                                                                                <constraint firstItem="0wI-5I-5T2" firstAttribute="top" secondItem="0Id-IC-45x" secondAttribute="bottom" constant="16" id="ds7-Pb-Qbm"/>
+                                                                                <constraint firstAttribute="trailing" secondItem="0Id-IC-45x" secondAttribute="trailing" id="oA9-X6-xKd"/>
                                                                             </constraints>
-                                                                        </imageView>
-                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="서울" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="38r-UK-yv9">
-                                                                            <rect key="frame" x="90" y="14" width="30" height="21"/>
-                                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                            <nil key="textColor"/>
-                                                                            <nil key="highlightedColor"/>
-                                                                        </label>
-                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="차로 30분 거리" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E0W-h8-wt2">
-                                                                            <rect key="frame" x="90" y="39" width="103" height="21"/>
-                                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                            <nil key="textColor"/>
-                                                                            <nil key="highlightedColor"/>
-                                                                        </label>
+                                                                        </view>
                                                                     </subviews>
                                                                     <constraints>
-                                                                        <constraint firstItem="E0W-h8-wt2" firstAttribute="top" secondItem="ABI-Cr-AjC" secondAttribute="centerY" constant="2" id="H6f-e2-2yZ"/>
-                                                                        <constraint firstItem="E0W-h8-wt2" firstAttribute="leading" secondItem="ABI-Cr-AjC" secondAttribute="trailing" constant="16" id="IY9-Qj-p1Q"/>
-                                                                        <constraint firstItem="38r-UK-yv9" firstAttribute="bottom" secondItem="ABI-Cr-AjC" secondAttribute="centerY" constant="-2" id="PNg-1i-FUb"/>
-                                                                        <constraint firstItem="38r-UK-yv9" firstAttribute="leading" secondItem="ABI-Cr-AjC" secondAttribute="trailing" constant="16" id="XrD-vW-MBX"/>
-                                                                        <constraint firstItem="ABI-Cr-AjC" firstAttribute="top" secondItem="4JJ-59-M7d" secondAttribute="top" id="aer-uC-RNd"/>
-                                                                        <constraint firstItem="ABI-Cr-AjC" firstAttribute="leading" secondItem="4JJ-59-M7d" secondAttribute="leading" id="xH2-R4-JrN"/>
+                                                                        <constraint firstItem="Vjr-BC-9ks" firstAttribute="leading" secondItem="hfI-3l-SgY" secondAttribute="leading" id="2Wm-D3-zNH"/>
+                                                                        <constraint firstItem="Vjr-BC-9ks" firstAttribute="top" secondItem="hfI-3l-SgY" secondAttribute="top" id="6BV-Uj-jQo"/>
+                                                                        <constraint firstAttribute="bottom" secondItem="Vjr-BC-9ks" secondAttribute="bottom" id="830-YP-nj6"/>
+                                                                        <constraint firstAttribute="trailing" secondItem="Vjr-BC-9ks" secondAttribute="trailing" id="dLw-rA-bJs"/>
                                                                     </constraints>
-                                                                </collectionViewCellContentView>
-                                                            </collectionViewCell>
-                                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="fb2-Zz-hcX">
-                                                                <rect key="frame" x="16" y="98" width="253" height="74"/>
-                                                                <autoresizingMask key="autoresizingMask"/>
-                                                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="QTN-Vu-t2i">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="253" height="74"/>
-                                                                    <autoresizingMask key="autoresizingMask"/>
                                                                 </collectionViewCellContentView>
                                                             </collectionViewCell>
                                                         </cells>
@@ -233,11 +229,11 @@
                                                     <constraint firstAttribute="trailing" secondItem="6XX-OT-JUK" secondAttribute="trailing" id="5GM-tT-w0Q"/>
                                                     <constraint firstAttribute="trailing" secondItem="Hkl-24-26u" secondAttribute="trailing" id="BwT-wc-c4s"/>
                                                     <constraint firstItem="Hkl-24-26u" firstAttribute="top" secondItem="GYm-cp-Vnk" secondAttribute="top" constant="40" id="CE4-DU-9Bh"/>
-                                                    <constraint firstAttribute="height" constant="275" id="G8N-4M-Kc2"/>
+                                                    <constraint firstAttribute="height" constant="460" id="G8N-4M-Kc2"/>
                                                     <constraint firstItem="6XX-OT-JUK" firstAttribute="leading" secondItem="GYm-cp-Vnk" secondAttribute="leading" id="PrZ-kD-Sqx"/>
-                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="275" id="RWZ-k4-Gcb"/>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="460" id="RWZ-k4-Gcb"/>
                                                     <constraint firstItem="6XX-OT-JUK" firstAttribute="top" secondItem="Hkl-24-26u" secondAttribute="bottom" constant="24" id="c9L-Hj-qYK"/>
-                                                    <constraint firstItem="Hkl-24-26u" firstAttribute="leading" secondItem="GYm-cp-Vnk" secondAttribute="leading" id="l18-Dw-lq5"/>
+                                                    <constraint firstItem="Hkl-24-26u" firstAttribute="leading" secondItem="GYm-cp-Vnk" secondAttribute="leading" constant="16" id="l18-Dw-lq5"/>
                                                 </constraints>
                                             </view>
                                         </subviews>
@@ -304,40 +300,13 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="anywhereTripCollectionView" destination="6XX-OT-JUK" id="iD0-dO-u6E"/>
                         <outlet property="nearTripCollectionView" destination="XJP-ej-Mj6" id="M49-VZ-2Ru"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="105.14018691588784" y="83.585313174946009"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="3Dr-Lp-NpF">
-            <objects>
-                <viewController id="e9c-yx-vRz" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="BEw-Mj-T6L">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="어디에서나, 여행은 살아보는거야!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KQD-SF-VNt">
-                                <rect key="frame" x="8" y="576" width="412" height="43"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bannerImage" translatesAutoresizingMaskIntoConstraints="NO" id="pZu-BJ-HYg">
-                                <rect key="frame" x="8" y="167" width="428" height="452"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="Bqw-Ps-56Q"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="kh2-4s-3ye" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1396.2616822429907" y="0.64794816414686829"/>
         </scene>
     </scenes>
     <resources>

@@ -9,12 +9,17 @@ import UIKit
 
 class ViewController: UIViewController {
     @IBOutlet weak var nearTripCollectionView: UICollectionView!
-    let collectionViewDataSource: UICollectionViewDataSource = NearTripCollectionViewDataSource()
-    let collectionViewDelegate = NearTripCollectionViewDelegate()
+    @IBOutlet weak var anywhereTripCollectionView: AnywhereTripCollectionView!
+
+    let nearTripCollectionViewDataSource: UICollectionViewDataSource = NearTripCollectionViewDataSource()
+    let anywhereCollectionViewDataSource: UICollectionViewDataSource = AnywhereTripCollectionViewDataSource()
+    let nearTripCollectionViewDelegate = NearTripCollectionViewDelegate()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        nearTripCollectionView.dataSource = collectionViewDataSource
-        nearTripCollectionView.delegate = collectionViewDelegate
+        nearTripCollectionView.dataSource = nearTripCollectionViewDataSource
+        nearTripCollectionView.delegate = nearTripCollectionViewDelegate
+        anywhereTripCollectionView.dataSource = anywhereCollectionViewDataSource
     }
 
 

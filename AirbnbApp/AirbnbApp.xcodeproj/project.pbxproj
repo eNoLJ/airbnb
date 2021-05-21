@@ -18,6 +18,9 @@
 		1E12E87E265537D300263A66 /* NearTripCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E12E87D265537D300263A66 /* NearTripCollectionView.swift */; };
 		1E12E880265537E900263A66 /* NearTripCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E12E87F265537E900263A66 /* NearTripCollectionViewCell.swift */; };
 		1E12E88226553E8000263A66 /* NearTripCollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E12E88126553E8000263A66 /* NearTripCollectionViewDataSource.swift */; };
+		1E12E8842657574300263A66 /* AnywhereTripCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E12E8832657574300263A66 /* AnywhereTripCollectionViewCell.swift */; };
+		1E12E8862657575500263A66 /* AnywhereTripCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E12E8852657575500263A66 /* AnywhereTripCollectionView.swift */; };
+		1E12E8882657577200263A66 /* AnywhereTripCollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E12E8872657577200263A66 /* AnywhereTripCollectionViewDataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +58,9 @@
 		1E12E87D265537D300263A66 /* NearTripCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearTripCollectionView.swift; sourceTree = "<group>"; };
 		1E12E87F265537E900263A66 /* NearTripCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearTripCollectionViewCell.swift; sourceTree = "<group>"; };
 		1E12E88126553E8000263A66 /* NearTripCollectionViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearTripCollectionViewDataSource.swift; sourceTree = "<group>"; };
+		1E12E8832657574300263A66 /* AnywhereTripCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnywhereTripCollectionViewCell.swift; sourceTree = "<group>"; };
+		1E12E8852657575500263A66 /* AnywhereTripCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnywhereTripCollectionView.swift; sourceTree = "<group>"; };
+		1E12E8872657577200263A66 /* AnywhereTripCollectionViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnywhereTripCollectionViewDataSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +121,9 @@
 				1E12E87D265537D300263A66 /* NearTripCollectionView.swift */,
 				1E12E87F265537E900263A66 /* NearTripCollectionViewCell.swift */,
 				1E12E88126553E8000263A66 /* NearTripCollectionViewDataSource.swift */,
+				1E12E8832657574300263A66 /* AnywhereTripCollectionViewCell.swift */,
+				1E12E8852657575500263A66 /* AnywhereTripCollectionView.swift */,
+				1E12E8872657577200263A66 /* AnywhereTripCollectionViewDataSource.swift */,
 			);
 			path = AirbnbApp;
 			sourceTree = "<group>";
@@ -272,6 +281,9 @@
 				1E12E84E2653A30D00263A66 /* AppDelegate.swift in Sources */,
 				1E12E8502653A30D00263A66 /* SceneDelegate.swift in Sources */,
 				1E12E88226553E8000263A66 /* NearTripCollectionViewDataSource.swift in Sources */,
+				1E12E8882657577200263A66 /* AnywhereTripCollectionViewDataSource.swift in Sources */,
+				1E12E8862657575500263A66 /* AnywhereTripCollectionView.swift in Sources */,
+				1E12E8842657574300263A66 /* AnywhereTripCollectionViewCell.swift in Sources */,
 				1E12E87E265537D300263A66 /* NearTripCollectionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
