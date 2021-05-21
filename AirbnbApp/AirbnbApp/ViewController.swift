@@ -11,17 +11,13 @@ class ViewController: UIViewController {
     @IBOutlet weak var nearTripCollectionView: UICollectionView!
     @IBOutlet weak var anywhereTripCollectionView: AnywhereTripCollectionView!
 
-    let nearTripCollectionViewDataSource: UICollectionViewDataSource = NearTripCollectionViewDataSource()
-    let anywhereCollectionViewDataSource: UICollectionViewDataSource = AnywhereTripCollectionViewDataSource()
-    let nearTripCollectionViewDelegate = NearTripCollectionViewDelegate()
-    
+    private let nearTripCollectionViewDataSource: UICollectionViewDataSource = NearTripCollectionViewDataSource()
+    private let anywhereCollectionViewDataSource: UICollectionViewDataSource = AnywhereTripCollectionViewDataSource()
+
     override func viewDidLoad() {
         super.viewDidLoad()
         nearTripCollectionView.dataSource = nearTripCollectionViewDataSource
-        nearTripCollectionView.delegate = nearTripCollectionViewDelegate
         anywhereTripCollectionView.dataSource = anywhereCollectionViewDataSource
     }
-
-
 }
 

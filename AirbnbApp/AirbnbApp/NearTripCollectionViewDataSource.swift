@@ -16,14 +16,4 @@ class NearTripCollectionViewDataSource: NSObject, UICollectionViewDataSource {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "NearTripCollectionViewCell", for: indexPath)
         return cell
     }
-    
-    
-}
-
-class NearTripCollectionViewDelegate: NSObject, UICollectionViewDelegateFlowLayout {
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        print(collectionView.bounds.height/2)
-        return CGSize(width: 253, height: 74)
-    }
-    
 }
