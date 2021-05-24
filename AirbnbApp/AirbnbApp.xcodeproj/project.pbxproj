@@ -21,6 +21,11 @@
 		1E12E8842657574300263A66 /* AnywhereTripCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E12E8832657574300263A66 /* AnywhereTripCollectionViewCell.swift */; };
 		1E12E8862657575500263A66 /* AnywhereTripCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E12E8852657575500263A66 /* AnywhereTripCollectionView.swift */; };
 		1E12E8882657577200263A66 /* AnywhereTripCollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E12E8872657577200263A66 /* AnywhereTripCollectionViewDataSource.swift */; };
+		1E12E88A26578D2700263A66 /* LocationSearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E12E88926578D2700263A66 /* LocationSearchTableViewController.swift */; };
+		1E12E88D26579C3700263A66 /* LocationSearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E12E88B26579C3700263A66 /* LocationSearchTableViewCell.swift */; };
+		1E12E88E26579C3700263A66 /* LocationSearchTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1E12E88C26579C3700263A66 /* LocationSearchTableViewCell.xib */; };
+		1E12E892265A41FD00263A66 /* ResultLocationSearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E12E891265A41FD00263A66 /* ResultLocationSearchTableViewController.swift */; };
+		1E12E895265A432B00263A66 /* BaseLocations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E12E894265A432B00263A66 /* BaseLocations.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +66,11 @@
 		1E12E8832657574300263A66 /* AnywhereTripCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnywhereTripCollectionViewCell.swift; sourceTree = "<group>"; };
 		1E12E8852657575500263A66 /* AnywhereTripCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnywhereTripCollectionView.swift; sourceTree = "<group>"; };
 		1E12E8872657577200263A66 /* AnywhereTripCollectionViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnywhereTripCollectionViewDataSource.swift; sourceTree = "<group>"; };
+		1E12E88926578D2700263A66 /* LocationSearchTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSearchTableViewController.swift; sourceTree = "<group>"; };
+		1E12E88B26579C3700263A66 /* LocationSearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSearchTableViewCell.swift; sourceTree = "<group>"; };
+		1E12E88C26579C3700263A66 /* LocationSearchTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LocationSearchTableViewCell.xib; sourceTree = "<group>"; };
+		1E12E891265A41FD00263A66 /* ResultLocationSearchTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultLocationSearchTableViewController.swift; sourceTree = "<group>"; };
+		1E12E894265A432B00263A66 /* BaseLocations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseLocations.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +121,9 @@
 		1E12E84C2653A30D00263A66 /* AirbnbApp */ = {
 			isa = PBXGroup;
 			children = (
+				1E12E893265A431100263A66 /* Entity */,
+				1E12E8902658EB1100263A66 /* Controller */,
+				1E12E88F2658EAFC00263A66 /* View */,
 				1E12E84D2653A30D00263A66 /* AppDelegate.swift */,
 				1E12E84F2653A30D00263A66 /* SceneDelegate.swift */,
 				1E12E8512653A30D00263A66 /* ViewController.swift */,
@@ -118,12 +131,6 @@
 				1E12E8562653A30F00263A66 /* Assets.xcassets */,
 				1E12E8582653A30F00263A66 /* LaunchScreen.storyboard */,
 				1E12E85B2653A30F00263A66 /* Info.plist */,
-				1E12E87D265537D300263A66 /* NearTripCollectionView.swift */,
-				1E12E87F265537E900263A66 /* NearTripCollectionViewCell.swift */,
-				1E12E88126553E8000263A66 /* NearTripCollectionViewDataSource.swift */,
-				1E12E8832657574300263A66 /* AnywhereTripCollectionViewCell.swift */,
-				1E12E8852657575500263A66 /* AnywhereTripCollectionView.swift */,
-				1E12E8872657577200263A66 /* AnywhereTripCollectionViewDataSource.swift */,
 			);
 			path = AirbnbApp;
 			sourceTree = "<group>";
@@ -144,6 +151,38 @@
 				1E12E8712653A30F00263A66 /* Info.plist */,
 			);
 			path = AirbnbAppUITests;
+			sourceTree = "<group>";
+		};
+		1E12E88F2658EAFC00263A66 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1E12E87F265537E900263A66 /* NearTripCollectionViewCell.swift */,
+				1E12E87D265537D300263A66 /* NearTripCollectionView.swift */,
+				1E12E8832657574300263A66 /* AnywhereTripCollectionViewCell.swift */,
+				1E12E8852657575500263A66 /* AnywhereTripCollectionView.swift */,
+				1E12E88B26579C3700263A66 /* LocationSearchTableViewCell.swift */,
+				1E12E88C26579C3700263A66 /* LocationSearchTableViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1E12E8902658EB1100263A66 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1E12E88126553E8000263A66 /* NearTripCollectionViewDataSource.swift */,
+				1E12E8872657577200263A66 /* AnywhereTripCollectionViewDataSource.swift */,
+				1E12E88926578D2700263A66 /* LocationSearchTableViewController.swift */,
+				1E12E891265A41FD00263A66 /* ResultLocationSearchTableViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1E12E893265A431100263A66 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				1E12E894265A432B00263A66 /* BaseLocations.swift */,
+			);
+			path = Entity;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -251,6 +290,7 @@
 			files = (
 				1E12E85A2653A30F00263A66 /* LaunchScreen.storyboard in Resources */,
 				1E12E8572653A30F00263A66 /* Assets.xcassets in Resources */,
+				1E12E88E26579C3700263A66 /* LocationSearchTableViewCell.xib in Resources */,
 				1E12E8552653A30D00263A66 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -276,13 +316,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E12E88D26579C3700263A66 /* LocationSearchTableViewCell.swift in Sources */,
 				1E12E8522653A30D00263A66 /* ViewController.swift in Sources */,
 				1E12E880265537E900263A66 /* NearTripCollectionViewCell.swift in Sources */,
 				1E12E84E2653A30D00263A66 /* AppDelegate.swift in Sources */,
+				1E12E895265A432B00263A66 /* BaseLocations.swift in Sources */,
 				1E12E8502653A30D00263A66 /* SceneDelegate.swift in Sources */,
 				1E12E88226553E8000263A66 /* NearTripCollectionViewDataSource.swift in Sources */,
 				1E12E8882657577200263A66 /* AnywhereTripCollectionViewDataSource.swift in Sources */,
+				1E12E88A26578D2700263A66 /* LocationSearchTableViewController.swift in Sources */,
 				1E12E8862657575500263A66 /* AnywhereTripCollectionView.swift in Sources */,
+				1E12E892265A41FD00263A66 /* ResultLocationSearchTableViewController.swift in Sources */,
 				1E12E8842657574300263A66 /* AnywhereTripCollectionViewCell.swift in Sources */,
 				1E12E87E265537D300263A66 /* NearTripCollectionView.swift in Sources */,
 			);

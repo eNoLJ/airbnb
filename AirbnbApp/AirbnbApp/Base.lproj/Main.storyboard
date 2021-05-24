@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Id8-3L-fd6">
     <device id="retina6_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
@@ -24,10 +24,10 @@
                                         <rect key="frame" x="0.0" y="0.0" width="428" height="1400"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bRn-0h-cfU">
-                                                <rect key="frame" x="0.0" y="132" width="428" height="356"/>
+                                                <rect key="frame" x="0.0" y="88" width="428" height="400"/>
                                                 <subviews>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bannerImage" translatesAutoresizingMaskIntoConstraints="NO" id="LK2-Nl-Gfx">
-                                                        <rect key="frame" x="0.0" y="-132" width="428" height="488"/>
+                                                        <rect key="frame" x="0.0" y="-132" width="428" height="532"/>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="슬기로운 자연생활" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mur-DK-BqU" userLabel="슬기로운 자연생활">
                                                         <rect key="frame" x="18.000000000000007" y="0.0" width="100.66666666666669" height="69.333333333333329"/>
@@ -284,6 +284,9 @@
                                         <integer key="value" value="20"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="goLocationSearchView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FSk-rm-77c"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -299,12 +302,60 @@
                             <constraint firstItem="pMw-WC-HGZ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="32" id="xfj-Hu-qqU"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="QEX-xF-Dat"/>
                     <connections>
                         <outlet property="anywhereTripCollectionView" destination="6XX-OT-JUK" id="iD0-dO-u6E"/>
                         <outlet property="nearTripCollectionView" destination="XJP-ej-Mj6" id="M49-VZ-2Ru"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1005.1401869158877" y="83.585313174946009"/>
+        </scene>
+        <!--Location Search Table View Controller-->
+        <scene sceneID="ULZ-Aq-IDA">
+            <objects>
+                <tableViewController storyboardIdentifier="LocationSearchTableViewController" id="aon-a0-Za9" customClass="LocationSearchTableViewController" customModule="AirbnbApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" sectionHeaderHeight="28" sectionFooterHeight="28" id="xee-TK-4T9">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <inset key="scrollIndicatorInsets" minX="22" minY="18" maxX="0.0" maxY="0.0"/>
+                        <inset key="separatorInset" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="YPf-xk-IGx">
+                                <rect key="frame" x="0.0" y="24.333333969116211" width="428" height="80"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="YPf-xk-IGx" id="yAP-MU-w4R">
+                                    <rect key="frame" x="0.0" y="0.0" width="428" height="80"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="aon-a0-Za9" id="9nD-Ck-Pbq"/>
+                            <outlet property="delegate" destination="aon-a0-Za9" id="6ST-Rh-wrs"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="hil-lw-3gA"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zwD-Yc-ePV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2095.7943925233644" y="73.866090712742988"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="x5u-7u-UCb">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="Id8-3L-fd6" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Hd6-3r-l9b">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="fxh-ac-aZA"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vql-j7-doZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="105.14018691588784" y="83.585313174946009"/>
         </scene>
