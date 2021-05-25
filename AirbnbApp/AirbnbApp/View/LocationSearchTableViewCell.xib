@@ -20,9 +20,8 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T9G-hr-fMi">
                         <rect key="frame" x="16" y="8" width="311" height="64"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Oj7-4f-HHv">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="locationSearchResultImage" translatesAutoresizingMaskIntoConstraints="NO" id="Oj7-4f-HHv">
                                 <rect key="frame" x="0.0" y="0.0" width="64" height="64"/>
-                                <color key="backgroundColor" red="0.2894863486" green="0.64139598610000004" blue="0.18024426700000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Oj7-4f-HHv" secondAttribute="height" multiplier="1:1" id="aLt-Ac-va2"/>
                                     <constraint firstAttribute="height" constant="64" id="hsV-Ik-pMM"/>
@@ -75,6 +74,7 @@
         </tableViewCell>
     </objects>
     <resources>
+        <image name="locationSearchResultImage" width="64" height="64"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

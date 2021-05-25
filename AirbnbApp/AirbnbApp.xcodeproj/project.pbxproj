@@ -31,6 +31,13 @@
 		1E12EF9E265BE72E00263A66 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E12EF9D265BE72E00263A66 /* SystemConfiguration.framework */; };
 		1E12EFA0265BE73400263A66 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E12EF9F265BE73400263A66 /* CoreLocation.framework */; };
 		1E12EFA2265BE73A00263A66 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E12EFA1265BE73A00263A66 /* QuartzCore.framework */; };
+		1ED92C2A265CA41200AB28F5 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED92C29265CA41200AB28F5 /* Place.swift */; };
+		1ED92C2D265CA4EE00AB28F5 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED92C2C265CA4EE00AB28F5 /* Endpoint.swift */; };
+		1ED92C2F265CADD600AB28F5 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED92C2E265CADD600AB28F5 /* NetworkManager.swift */; };
+		1ED92C32265CC98E00AB28F5 /* KakaoMapKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED92C31265CC98E00AB28F5 /* KakaoMapKey.swift */; };
+		1ED92C34265CD6C800AB28F5 /* LocationNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED92C33265CD6C800AB28F5 /* LocationNetworkManager.swift */; };
+		1ED92C37265CDD0600AB28F5 /* LocationSearchUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED92C36265CDD0600AB28F5 /* LocationSearchUseCase.swift */; };
+		1ED92C3A265CDFF400AB28F5 /* LocationSearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED92C39265CDFF400AB28F5 /* LocationSearchViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -119,6 +126,13 @@
 		1E12EFA3265BE74400263A66 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		1E12EFA4265BE74B00263A66 /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
 		1E12EFA5265BE75100263A66 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		1ED92C29265CA41200AB28F5 /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
+		1ED92C2C265CA4EE00AB28F5 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		1ED92C2E265CADD600AB28F5 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		1ED92C31265CC98E00AB28F5 /* KakaoMapKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoMapKey.swift; sourceTree = "<group>"; };
+		1ED92C33265CD6C800AB28F5 /* LocationNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationNetworkManager.swift; sourceTree = "<group>"; };
+		1ED92C36265CDD0600AB28F5 /* LocationSearchUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSearchUseCase.swift; sourceTree = "<group>"; };
+		1ED92C39265CDFF400AB28F5 /* LocationSearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSearchViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,6 +189,10 @@
 		1E12E84C2653A30D00263A66 /* AirbnbApp */ = {
 			isa = PBXGroup;
 			children = (
+				1ED92C38265CDFDE00AB28F5 /* ViewModel */,
+				1ED92C35265CDCDF00AB28F5 /* UseCase */,
+				1ED92C30265CC96500AB28F5 /* KakaoMapKey */,
+				1ED92C2B265CA4E000AB28F5 /* Network */,
 				1E12E893265A431100263A66 /* Entity */,
 				1E12E8902658EB1100263A66 /* Controller */,
 				1E12E88F2658EAFC00263A66 /* View */,
@@ -235,6 +253,7 @@
 			isa = PBXGroup;
 			children = (
 				1E12E894265A432B00263A66 /* BaseLocations.swift */,
+				1ED92C29265CA41200AB28F5 /* Place.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -312,6 +331,40 @@
 				1E12EF8C265BE4AA00263A66 /* MTMapCircle.h */,
 			);
 			path = Headers;
+			sourceTree = "<group>";
+		};
+		1ED92C2B265CA4E000AB28F5 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				1ED92C2C265CA4EE00AB28F5 /* Endpoint.swift */,
+				1ED92C2E265CADD600AB28F5 /* NetworkManager.swift */,
+				1ED92C33265CD6C800AB28F5 /* LocationNetworkManager.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		1ED92C30265CC96500AB28F5 /* KakaoMapKey */ = {
+			isa = PBXGroup;
+			children = (
+				1ED92C31265CC98E00AB28F5 /* KakaoMapKey.swift */,
+			);
+			path = KakaoMapKey;
+			sourceTree = "<group>";
+		};
+		1ED92C35265CDCDF00AB28F5 /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+				1ED92C36265CDD0600AB28F5 /* LocationSearchUseCase.swift */,
+			);
+			path = UseCase;
+			sourceTree = "<group>";
+		};
+		1ED92C38265CDFDE00AB28F5 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1ED92C39265CDFF400AB28F5 /* LocationSearchViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -447,9 +500,15 @@
 			files = (
 				1E12E88D26579C3700263A66 /* LocationSearchTableViewCell.swift in Sources */,
 				1E12E8522653A30D00263A66 /* ViewController.swift in Sources */,
+				1ED92C37265CDD0600AB28F5 /* LocationSearchUseCase.swift in Sources */,
+				1ED92C3A265CDFF400AB28F5 /* LocationSearchViewModel.swift in Sources */,
 				1E12E880265537E900263A66 /* NearTripCollectionViewCell.swift in Sources */,
 				1E12E84E2653A30D00263A66 /* AppDelegate.swift in Sources */,
+				1ED92C32265CC98E00AB28F5 /* KakaoMapKey.swift in Sources */,
+				1ED92C2F265CADD600AB28F5 /* NetworkManager.swift in Sources */,
+				1ED92C2D265CA4EE00AB28F5 /* Endpoint.swift in Sources */,
 				1E12E895265A432B00263A66 /* BaseLocations.swift in Sources */,
+				1ED92C2A265CA41200AB28F5 /* Place.swift in Sources */,
 				1E12E8502653A30D00263A66 /* SceneDelegate.swift in Sources */,
 				1E12E88226553E8000263A66 /* NearTripCollectionViewDataSource.swift in Sources */,
 				1E12E8882657577200263A66 /* AnywhereTripCollectionViewDataSource.swift in Sources */,
@@ -458,6 +517,7 @@
 				1E12E892265A41FD00263A66 /* ResultLocationSearchTableViewController.swift in Sources */,
 				1E12E8842657574300263A66 /* AnywhereTripCollectionViewCell.swift in Sources */,
 				1E12E87E265537D300263A66 /* NearTripCollectionView.swift in Sources */,
+				1ED92C34265CD6C800AB28F5 /* LocationNetworkManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

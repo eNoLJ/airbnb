@@ -9,8 +9,10 @@ import UIKit
 
 class ResultsTableController: BaseTableViewController {
     
+
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 30
+  
+        return searchedPlaces.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -18,7 +20,7 @@ class ResultsTableController: BaseTableViewController {
             return UITableViewCell()
         }
 
-        cell.configureLocationLabel(text: "코드스쿼드")
+        cell.configureLocationLabel(text: searchedPlaces[indexPath.row].addressName)
         
         return cell
     }
@@ -26,6 +28,7 @@ class ResultsTableController: BaseTableViewController {
 
 class BaseTableViewController: UITableViewController {
     
+    var searchedPlaces = [Document]()
     static let tableViewCellIdentifier = "cellID"
     private static let nibName = "LocationSearchTableViewCell"
     

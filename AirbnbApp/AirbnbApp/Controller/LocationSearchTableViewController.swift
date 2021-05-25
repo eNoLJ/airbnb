@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Combine
 
 class LocationSearchTableViewController: UITableViewController, UISearchResultsUpdating {
     
@@ -18,9 +19,12 @@ class LocationSearchTableViewController: UITableViewController, UISearchResultsU
         return searchController
       }()
     
+    private var locationSearchViewModel = LocationSearchViewModel()
+    private var subscriptions = Set<AnyCancellable>()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        bind()
         let nib = UINib(nibName: "LocationSearchTableViewCell", bundle: nil)
         
         tableView.register(nib, forCellReuseIdentifier: BaseTableViewController.tableViewCellIdentifier)
@@ -36,13 +40,28 @@ class LocationSearchTableViewController: UITableViewController, UISearchResultsU
         self.searchController.searchResultsUpdater = self
     }
     
+    func bind() {
+        locationSearchViewModel.$searchedPlaces
+            .receive(on: DispatchQueue.main)
+            .sink { places in
+                if let resultController = self.searchController.searchResultsController as? ResultsTableController {
+                    resultController.searchedPlaces = self.locationSearchViewModel.searchedPlaces
+                    resultController.tableView.reloadData()
+                }
+            }
+            .store(in: &subscriptions)
+    }
+    
     func updateSearchResults(for searchController: UISearchController) {
         guard let text = searchController.searchBar.text else {
             return
         }
         
-        let vc =  searchController.searchResultsUpdater as? ResultsTableController
-        vc?.view.backgroundColor = .yellow
+        if !text.isEmpty {
+            DispatchQueue.global().async {
+                self.locationSearchViewModel.searchPlaces(keyword: text)
+            }
+        }
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -51,8 +70,7 @@ class LocationSearchTableViewController: UITableViewController, UISearchResultsU
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cellID", for: indexPath) as! LocationSearchTableViewCell
-//        let product = filteredProducts[indexPath.row]
-        
+
         cell.configureLocationLabel(text: BaseLocations.baseLocations[indexPath.row])
         
         return cell

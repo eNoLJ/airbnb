@@ -24,10 +24,10 @@
                                         <rect key="frame" x="0.0" y="0.0" width="428" height="1400"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bRn-0h-cfU">
-                                                <rect key="frame" x="0.0" y="88" width="428" height="400"/>
+                                                <rect key="frame" x="0.0" y="132" width="428" height="356"/>
                                                 <subviews>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bannerImage" translatesAutoresizingMaskIntoConstraints="NO" id="LK2-Nl-Gfx">
-                                                        <rect key="frame" x="0.0" y="-132" width="428" height="532"/>
+                                                        <rect key="frame" x="0.0" y="-132" width="428" height="488"/>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="슬기로운 자연생활" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mur-DK-BqU" userLabel="슬기로운 자연생활">
                                                         <rect key="frame" x="18.000000000000007" y="0.0" width="100.66666666666669" height="69.333333333333329"/>
