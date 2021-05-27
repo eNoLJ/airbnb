@@ -25,9 +25,9 @@ class LocationSearchTableViewController: UITableViewController, UISearchResultsU
     override func viewDidLoad() {
         super.viewDidLoad()
         bind()
-        let nib = UINib(nibName: "LocationSearchTableViewCell", bundle: nil)
+        let nib = UINib(nibName: String(describing: LocationSearchTableViewCell.nibName) , bundle: nil)
         
-        tableView.register(nib, forCellReuseIdentifier: BaseTableViewController.tableViewCellIdentifier)
+        tableView.register(nib, forCellReuseIdentifier: LocationSearchTableViewCell.cellID)
         self.tableView.dataSource = self
         configureSearchBar()
     }
@@ -69,7 +69,7 @@ class LocationSearchTableViewController: UITableViewController, UISearchResultsU
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cellID", for: indexPath) as! LocationSearchTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: LocationSearchTableViewCell.cellID, for: indexPath) as! LocationSearchTableViewCell
 
         cell.configureLocationLabel(text: BaseLocations.baseLocations[indexPath.row])
         

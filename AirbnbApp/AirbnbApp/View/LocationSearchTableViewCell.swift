@@ -11,7 +11,10 @@ class LocationSearchTableViewCell: UITableViewCell {
 
     @IBOutlet weak var locationImage: UIImageView!
     @IBOutlet weak var locationLabel: UILabel!
-   // @IBOutlet weak var minutesAway: UILabel!
+    static var nibName: String {
+        return String(describing: self)
+      }
+    static var cellID: String = "cellID"
     
     override func awakeFromNib() {
         super.awakeFromNib()

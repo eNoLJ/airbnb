@@ -16,7 +16,7 @@ class ResultsTableController: BaseTableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "cellID", for: indexPath) as? LocationSearchTableViewCell else {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: LocationSearchResultTableViewCell.cellID, for: indexPath) as? LocationSearchResultTableViewCell else {
             return UITableViewCell()
         }
 
@@ -29,14 +29,12 @@ class ResultsTableController: BaseTableViewController {
 class BaseTableViewController: UITableViewController {
     
     var searchedPlaces = [Document]()
-    static let tableViewCellIdentifier = "cellID"
-    private static let nibName = "LocationSearchTableViewCell"
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let nib = UINib(nibName: BaseTableViewController.nibName, bundle: nil)
-        tableView.register(nib, forCellReuseIdentifier: "cellID")
+        let nib = UINib(nibName: LocationSearchResultTableViewCell.nibName, bundle: nil)
+        tableView.register(nib, forCellReuseIdentifier: LocationSearchResultTableViewCell.cellID)
     }
     
     func configureCell(_ cell: UITableViewCell, forLocation location: String) {

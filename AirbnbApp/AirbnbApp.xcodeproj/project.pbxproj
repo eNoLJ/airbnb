@@ -38,6 +38,8 @@
 		1ED92C34265CD6C800AB28F5 /* LocationNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED92C33265CD6C800AB28F5 /* LocationNetworkManager.swift */; };
 		1ED92C37265CDD0600AB28F5 /* LocationSearchUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED92C36265CDD0600AB28F5 /* LocationSearchUseCase.swift */; };
 		1ED92C3A265CDFF400AB28F5 /* LocationSearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED92C39265CDFF400AB28F5 /* LocationSearchViewModel.swift */; };
+		1ED92C3D265E8FB900AB28F5 /* LocationSearchResultTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED92C3B265E8FB900AB28F5 /* LocationSearchResultTableViewCell.swift */; };
+		1ED92C3E265E8FB900AB28F5 /* LocationSearchResultTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1ED92C3C265E8FB900AB28F5 /* LocationSearchResultTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -133,6 +135,8 @@
 		1ED92C33265CD6C800AB28F5 /* LocationNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationNetworkManager.swift; sourceTree = "<group>"; };
 		1ED92C36265CDD0600AB28F5 /* LocationSearchUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSearchUseCase.swift; sourceTree = "<group>"; };
 		1ED92C39265CDFF400AB28F5 /* LocationSearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSearchViewModel.swift; sourceTree = "<group>"; };
+		1ED92C3B265E8FB900AB28F5 /* LocationSearchResultTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSearchResultTableViewCell.swift; sourceTree = "<group>"; };
+		1ED92C3C265E8FB900AB28F5 /* LocationSearchResultTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LocationSearchResultTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -234,6 +238,8 @@
 				1E12E8852657575500263A66 /* AnywhereTripCollectionView.swift */,
 				1E12E88B26579C3700263A66 /* LocationSearchTableViewCell.swift */,
 				1E12E88C26579C3700263A66 /* LocationSearchTableViewCell.xib */,
+				1ED92C3B265E8FB900AB28F5 /* LocationSearchResultTableViewCell.swift */,
+				1ED92C3C265E8FB900AB28F5 /* LocationSearchResultTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -470,6 +476,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1ED92C3E265E8FB900AB28F5 /* LocationSearchResultTableViewCell.xib in Resources */,
 				1E12E85A2653A30F00263A66 /* LaunchScreen.storyboard in Resources */,
 				1E12E8572653A30F00263A66 /* Assets.xcassets in Resources */,
 				1E12E88E26579C3700263A66 /* LocationSearchTableViewCell.xib in Resources */,
@@ -506,6 +513,7 @@
 				1E12E84E2653A30D00263A66 /* AppDelegate.swift in Sources */,
 				1ED92C32265CC98E00AB28F5 /* KakaoMapKey.swift in Sources */,
 				1ED92C2F265CADD600AB28F5 /* NetworkManager.swift in Sources */,
+				1ED92C3D265E8FB900AB28F5 /* LocationSearchResultTableViewCell.swift in Sources */,
 				1ED92C2D265CA4EE00AB28F5 /* Endpoint.swift in Sources */,
 				1E12E895265A432B00263A66 /* BaseLocations.swift in Sources */,
 				1ED92C2A265CA41200AB28F5 /* Place.swift in Sources */,

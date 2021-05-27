@@ -20,7 +20,7 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T9G-hr-fMi">
                         <rect key="frame" x="16" y="8" width="311" height="64"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="locationSearchResultImage" translatesAutoresizingMaskIntoConstraints="NO" id="Oj7-4f-HHv">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bannerImage" translatesAutoresizingMaskIntoConstraints="NO" id="Oj7-4f-HHv">
                                 <rect key="frame" x="0.0" y="0.0" width="64" height="64"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Oj7-4f-HHv" secondAttribute="height" multiplier="1:1" id="aLt-Ac-va2"/>
@@ -34,7 +34,7 @@
                                 </userDefinedRuntimeAttributes>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R0D-z5-uWK">
-                                <rect key="frame" x="80" y="21.5" width="42" height="21"/>
+                                <rect key="frame" x="80" y="9" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -50,7 +50,7 @@
                         <constraints>
                             <constraint firstItem="n6Z-fR-9Ym" firstAttribute="leading" secondItem="Oj7-4f-HHv" secondAttribute="trailing" constant="16" id="J2S-9p-HK6"/>
                             <constraint firstItem="n6Z-fR-9Ym" firstAttribute="top" secondItem="Oj7-4f-HHv" secondAttribute="centerY" constant="2" id="UX4-SL-Gd1"/>
-                            <constraint firstItem="R0D-z5-uWK" firstAttribute="centerY" secondItem="Oj7-4f-HHv" secondAttribute="centerY" id="UZb-0y-4al"/>
+                            <constraint firstItem="R0D-z5-uWK" firstAttribute="bottom" secondItem="Oj7-4f-HHv" secondAttribute="centerY" constant="-2" id="UZb-0y-4al"/>
                             <constraint firstItem="Oj7-4f-HHv" firstAttribute="centerY" secondItem="T9G-hr-fMi" secondAttribute="centerY" id="bdn-Oy-hlz"/>
                             <constraint firstItem="Oj7-4f-HHv" firstAttribute="top" secondItem="T9G-hr-fMi" secondAttribute="top" id="ei1-dE-LRo"/>
                             <constraint firstItem="R0D-z5-uWK" firstAttribute="leading" secondItem="Oj7-4f-HHv" secondAttribute="trailing" constant="16" id="n6g-W8-1Xa"/>
@@ -74,7 +74,7 @@
         </tableViewCell>
     </objects>
     <resources>
-        <image name="locationSearchResultImage" width="64" height="64"/>
+        <image name="bannerImage" width="240" height="312.33334350585938"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
